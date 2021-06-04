@@ -1,0 +1,32 @@
+{
+    "team":[
+        {
+          "id":1,
+          "name": "Walter White",
+          "position": "Chief Executive Officer",
+          "bio": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+          "img": "assets/img/team/team-1.jpg"
+        },
+        {
+          "id":2,
+          "name": "Sarah Jhinson",
+          "position": "Product Manager",
+          "bio": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+          "img": "assets/img/team/team-2.jpg"
+        },
+        {
+          "id":1,
+          "name": "Walter White",
+          "position": "Chief Executive Officer",
+          "bio": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+          "img": "assets/img/team/team-1.jpg"
+        },
+        {
+          "id":2,
+          "name": "Sarah Jhinson",
+          "position": "Product Manager",
+          "bio": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+          "img": "assets/img/team/team-2.jpg"
+        }
+      ]
+}

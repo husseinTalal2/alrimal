@@ -1,9 +1,52 @@
-/**
-* Template Name: Green - v2.3.1
-* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+const projects = [
+  {
+    id:1,
+    title: " مجمع اران السكني ",
+    info: "مجمع سكني متكامل مع جميع الخدمات",
+    img: "./assets/img/projects/aran/1.jpg",
+    category:"management",
+    href: "/ar/projects/aran"
+  },
+  {
+    id:2,
+    title: " مدينة العاب جنات واسط المائية",
+    info: "",
+    img: "./assets/img/projects/jannat-wasit/3.jpg",
+    category:"management",
+    href: "/ar/projects/jannat-wasit"
+  },
+]
+
+const team = [
+  {
+    id:1,
+    name: "Walter White",
+    position: "Chief Executive Officer",
+    bio: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    img: "assets/img/team/team-1.jpg",
+  },
+  {
+    id:2,
+    name: "Sarah Jhinson",
+    position: "Product Manager",
+    bio: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    img: "assets/img/team/team-2.jpg",
+  },
+  {
+    id:1,
+    name: "Walter White",
+    position: "Chief Executive Officer",
+    bio: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    img: "assets/img/team/team-1.jpg",
+  },
+  {
+    id:2,
+    name: "Sarah Jhinson",
+    position: "Product Manager",
+    bio: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    img: "assets/img/team/team-2.jpg",
+  },
+]
 !(function($) {
   "use strict";
 
@@ -226,7 +269,7 @@
 
   var owl = $('.portfolio-details-carousel');
   owl.owlCarousel({
-    items:2,
+    items:1,
     loop:true,
     autoplay:true,
     autoplayTimeout:3000,
@@ -257,5 +300,26 @@ const marker2 = new mapboxgl.Marker({
 })
 .setLngLat([44.433509826660156, 33.296268463134766])
 .addTo(map);
+
+//adding the projects 
+
+projects.forEach(project => {
+  const container = $(".portfolio-container")[0];
+  container.insertAdjacentHTML('afterbegin',`
+  
+    <div class="col-md-4 portfolio-item filter-${project.category}">
+      <div class="property-card">
+        <a href="${project.href}">
+          <div class="property-image" style="background-image:url(${project.img});">
+          </div>
+        </a>
+        <div class="property-description">
+          <h5>${project.title}</h5>
+          <p>${project.info}</p>
+        </div>
+      </div>
+    </div>
+  `)
+})
 
 })(jQuery);
