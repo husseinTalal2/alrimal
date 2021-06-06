@@ -15,6 +15,22 @@ const projects = [
     category:"management",
     href: "/ar/projects/jannat-wasit"
   },
+  {
+    id:3,
+    title: "تصاميم داخلية",
+    info: "مجموعة من التصاميم الداخلية",
+    img: "./assets/img/projects/designs/1.jpg",
+    category:"design",
+    href: "/ar/projects/designs"
+  },
+  {
+    id:4,
+    title: "تصاميم خارجية و حدائق",
+    info: "مجموعة من التصاميم الخارجية و الحدائق",
+    img: "./assets/img/projects/gardens/1.jpg",
+    category:"design",
+    href: "/ar/projects/gardens"
+  },
 ]
 
 const team = [
