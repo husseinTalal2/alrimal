@@ -300,6 +300,11 @@ const marker2 = new mapboxgl.Marker({
 })
 .setLngLat([44.433509826660156, 33.296268463134766])
 .addTo(map);
+const marker3 = new mapboxgl.Marker({
+  color: "#FF1111"
+})
+.setLngLat([47.8347998, 30.5093473])
+.addTo(map);
 
 //adding the projects 
 
