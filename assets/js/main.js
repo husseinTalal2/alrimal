@@ -31,6 +31,14 @@ const projects = [
     category:"design",
     href: "/ar/projects/gardens"
   },
+  {
+    id:5,
+    title: "تأهيل و تطوير مطعم بيارة الشام",
+    info: "التصاميم الخارجية لمطعم بيارة الشام",
+    img: "./assets/img/projects/alsham/3.jpg",
+    category:"design",
+    href: "/ar/projects/alsham"
+  },
 ]
 
 const team = [
