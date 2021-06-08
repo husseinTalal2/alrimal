@@ -5,12 +5,14 @@ const subject = document.getElementById("subject");
 const msg = document.getElementById("msg");
 const phoneNumber = document.getElementById("phoneNumber");
 
+form.addEventListener("submit", (e) => {
+    e.preventDefault;
+    console.log(e.target);
+    sendEmail(e)
+})
 
-
-
+emailjs.init("user_5X6CajhDjKCwrtOu5WaYy");
 const sendEmail = (e) => {
-    e.preventDefault();
-    
     emailjs
         .sendForm(
             "service_mxydsfb",
