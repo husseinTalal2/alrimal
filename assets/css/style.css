@@ -421,7 +421,7 @@ box-shadow: 1px 13px 83px -24px rgba(0,0,0,0.75);
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(182, 160, 88, 0.493);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #hero .carousel-container {
