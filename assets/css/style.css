@@ -9,12 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #444444;
 }
 
 a {
   color: #222222;
+  font-family: 'Cairo', sans-serif;
 }
 
 a:hover {
@@ -23,7 +24,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -178,7 +179,7 @@ box-shadow: 1px 13px 83px -24px rgba(0,0,0,0.75);
   color: #222222;
   transition: 0.3s;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -525,7 +526,7 @@ box-shadow: 1px 13px 83px -24px rgba(0,0,0,0.75);
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -954,7 +955,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1516,7 +1517,7 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
@@ -1692,7 +1693,7 @@ opacity:1;
   margin: auto;
   position: relative;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Cairo",sans-serif;
 }
 
 .owl-carousel .owl-nav {
@@ -1832,7 +1833,7 @@ opacity:1;
   display: -webkit-box;
   max-height: 85px;
   overflow: hidden;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   font-size: 23px;
   line-height: 28px;
   text-shadow: 0px 1px 5px black;
@@ -1845,7 +1846,7 @@ opacity:1;
   max-height: 150px;
   margin: 20px 0;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-overflow: ellipsis;
@@ -1863,7 +1864,7 @@ opacity:1;
   padding: 10px 20px;
   color: white;
   border: 1px solid white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
