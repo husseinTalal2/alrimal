@@ -550,14 +550,14 @@
                   <div class="validate"></div>
                 </div>
                 <div class="form-group text-right col-md-6">
-                  <label for="name">الاسم</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label for="name">*الاسم</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group text-right">
-                <label for="name">رقم الهاتف</label>
-                <input type="tel" class="form-control" name="phone" id="phoneNumber" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <label for="name">*رقم الهاتف</label>
+                <input pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" type="tel" class="form-control" name="phone" id="phoneNumber" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group text-right">
@@ -566,8 +566,8 @@
                 <div class="validate"></div>
               </div>
               <div class="form-group text-right">
-                <label for="name">الرسالة</label>
-                <textarea id="msg" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <label for="name">*الرسالة</label>
+                <textarea id="msg" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" required></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -613,9 +613,12 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+  <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script> -->
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script>
+  emailjs.init("user_5X6CajhDjKCwrtOu5WaYy");
 </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
