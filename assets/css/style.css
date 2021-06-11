@@ -1893,3 +1893,8 @@ opacity:1;
     margin-top: 8rem;
   }
 }
+
+.dropdown{
+  margin-block: auto;
+  margin-inline: 1rem;
+}
