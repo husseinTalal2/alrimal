@@ -19,7 +19,7 @@ const projects = [
       id:3,
       title: "تصاميم داخلية",
       info: "مجموعة من التصاميم الداخلية",
-      img: "./assets/img/projects/designs/1.jpg",
+      img: "./assets/img/projects/designs/11.jpg",
       category:"design",
       href: "/ar/projects/designs"
     },

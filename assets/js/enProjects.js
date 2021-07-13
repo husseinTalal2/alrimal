@@ -27,7 +27,7 @@ const projects = [
       id:4,
       title: "Gardens and exterior designs",
       info: "A collection of exterior and garden designs",
-      img: "./assets/img/projects/gardens/1.jpg",
+      img: "./assets/img/projects/gardens/11.jpg",
       category:"design",
       href: "/en/projects/gardens"
     },
