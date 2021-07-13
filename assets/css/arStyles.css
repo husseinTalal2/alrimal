@@ -10,3 +10,16 @@
     direction: rtl;
 }
 
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .owl-dots {
+    display: flex;
+    justify-content: flex-end;
+  }

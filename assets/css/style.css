@@ -1898,3 +1898,23 @@ opacity:1;
   margin-block: auto;
   margin-inline: 1rem;
 }
+
+.btn-read{
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #000;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  background: #d7bf77;
+}
+.btn-read:hover {  
+  background: #222222;
+  color: #fff;
+}
