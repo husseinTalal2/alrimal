@@ -1,0 +1,46 @@
+{
+    "project":{
+        "ar":{
+            "title":"",
+            "body":"",
+            "subtitle":"",
+            "photos":[],
+            "client":"",
+            "date":"",
+            "category":"",
+            "location":""
+        },
+        "en":{
+            "title":"",
+            "body":"",
+            "subtitle":"",
+            "photos":[],
+            "client":"",
+            "date":"",
+            "category":"",
+            "location":""
+        }
+    },
+
+    "member":{
+        "ar":{
+            "name":"",
+            "photo":"",
+            "description":""
+        },
+        "en":{
+            "name":"",
+            "photo":"",
+            "description":""
+        }
+    },
+
+    "news":{
+        "ar":{
+            "title":"",
+            "paragraph":"",
+            "subtitle":"",
+            "photos":[]
+        }
+    }
+}
