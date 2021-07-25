@@ -1,3 +1,7 @@
+const queryString = window.location.search;
+const parameters = new URLSearchParams(queryString);
+const value = parameters.get("q")
+
 const randomNum = () => {
     return Math.random() * 100000;
 };
@@ -12,10 +16,34 @@ const arsubtitle = document.getElementById("arsubtitle");
 const arparagraph = document.getElementById("arparagraph");
 const newsPhotos = document.getElementById("news-photos");
 
+const getInfo = async () => {
+    console.log("from getInfo");
+    await db
+    .collection("news").doc(value)
+    .get()
+    .then(doc => {
+        doc = doc.data()
+        newsTitle.value = doc.en.title;
+        subtitle.value = doc.en.subtitle;
+        paragraph.value = doc.en.paragraph;
+        newsarTitle.value = doc.ar.title;
+        arsubtitle.value = doc.ar.subtitle;
+        arparagraph.value = doc.ar.paragraph;
+    });    
+}
+if (value != null) {
+    getInfo();
+}
+
 newsForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const imgs = Object.values(newsPhotos.files);
-    const docRef = db.collection("news").doc();
+    let docRef;
+    if(value != null){
+        docRef = db.collection("news").doc(value);    
+    }else{
+        docRef = db.collection("news").doc();
+    }
 
     imgs.forEach((img) => {
         const storageRef = storage
