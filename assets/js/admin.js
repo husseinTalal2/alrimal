@@ -136,7 +136,9 @@
             .delete()
             .then(() => {
                 storage.ref().child(`/${section}/${id}`).listAll().then((listResults) => {
+                    console.log("from storage");
                     listResults.items.forEach((item) => {
+                        console.log("from delete");
                         item.delete();
                     });
                     alert("successfully deleted!");
