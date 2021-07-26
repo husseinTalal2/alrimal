@@ -5,8 +5,10 @@ const value = parameters.get("q")
 const teamForm = document.getElementById("team-form");
 const name = document.getElementById("name");
 const desc = document.getElementById("description");
+const position = document.getElementById("position");
 const arname = document.getElementById("arname");
 const ardesc = document.getElementById("ardescription");
+const arposition = document.getElementById("arposition");
 const teamPhoto = document.getElementById("team-photo");
 
 const getInfo = async () => {
@@ -18,7 +20,9 @@ const getInfo = async () => {
         doc = doc.data()
         name.value=doc.en.name;        
         desc.value=doc.en.desc;        
+        position.value=doc.en.position;        
         ardesc.value=doc.ar.desc;        
+        arposition.value=doc.ar.position;        
         arname.value=doc.ar.name;        
     });    
 }
@@ -46,10 +50,12 @@ teamForm.addEventListener("submit", (e) => {
     const teamData = {
         en: {
             name: name.value,
+            position: position.value,
             desc: desc.value,
         },
         ar: {
             name: arname.value,
+            position: arposition.value,
             desc: ardesc.value,
         },
     };
