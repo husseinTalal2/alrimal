@@ -2,7 +2,7 @@
 
     firebase.auth().onAuthStateChanged((user) => {
         if (!user) {
-            window.location.replace("/admin/login.html")
+            //window.location.replace("/admin/login.html")
         }
       });
 
