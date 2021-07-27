@@ -67,7 +67,7 @@
         projectsContainer.insertAdjacentHTML(
             "afterbegin",
             `
-            <div class="card " style="width: 18rem;">
+            <div class="card mx-3" style="width: 18rem;">
                 <img class="card-img-top" src=${imgs[0]} alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${project.data.en.title}</h5>
@@ -87,7 +87,7 @@
         newsContainer.insertAdjacentHTML(
             "afterbegin",
             `
-            <div class="card " style="width: 18rem;">
+            <div class="card mx-3" style="width: 18rem;">
                 <img class="card-img-top" src=${imgs[0]} alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${item.data.en.title}</h5>
@@ -106,7 +106,7 @@
         teamContainer.insertAdjacentHTML(
             "afterbegin",
             `
-            <div class="card " style="width: 18rem;">
+            <div class="card mx-3" style="width: 18rem;">
                 <img class="card-img-top" src=${imgs[0]} alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${member.data.en.name}</h5>

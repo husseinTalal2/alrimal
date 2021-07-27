@@ -1944,3 +1944,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .5);
   margin-inline: 10%;
 }
+.portfolio-container{
+  min-height: 50vh;
+}

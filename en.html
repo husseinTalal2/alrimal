@@ -315,16 +315,7 @@ where we have a full team of consultants in all engineering specializations, and
           <p>Our company has implemented, designed, managed and inspected many projects</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-design">Design</li>
-              <li data-filter=".filter-inspection">Inspection</li>
-              <li data-filter=".filter-management">Project Management</li>
-            </ul>
-          </div>
-        </div>
+       
 
         <div class="row portfolio-container">
           
@@ -356,9 +347,10 @@ where we have a full team of consultants in all engineering specializations, and
           <p class="team-section-description">Our company is distinguished by the experience of its engineering and technical teams</p>
         </div>
         
-        <div class="row">
-          <div class="owl-carousel owl-theme team-carousel">
-            <div class="item mx-3">
+        <div class="row team-container">
+          
+          <!-- <div class="owl-carousel owl-theme team-carousel"> -->
+            <!-- <div class="item mx-3">
               <div class="member d-flex flex-column justify-content-center align-items-center">
                 <img src="assets/img/team/ahmed.PNG" alt="">
                 <h4>Ahmed Qasim Al-Ansary</h4>
@@ -368,17 +360,7 @@ where we have a full team of consultants in all engineering specializations, and
                 </p>
               </div>
             </div>
-            <!-- <div class="item mx-3">
-              <div class="member d-flex flex-column justify-content-center align-items-center">
-                <img src="assets/img/team/haider.PNG" alt="">
-                <h4>Hayder adnan</h4>
-                <span>Consultant</span>
-                <p>
-                  Civil – Consultant Engineer
-                </p>
-                
-              </div>
-            </div> -->
+
             <div class="item mx-3">
               <div class="member d-flex flex-column justify-content-center align-items-center">
                 <img src="assets/img/team/fadhel.jpeg" alt="">
@@ -400,8 +382,8 @@ where we have a full team of consultants in all engineering specializations, and
                   Civil Engineering Consultant
                 </p>
               </div>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
         </div>          
         
         <!-- <div class="row">
@@ -469,19 +451,10 @@ where we have a full team of consultants in all engineering specializations, and
           <h2>News</h2>
           
         </div>
-        <div class="row">
+        <div class="row news-container">
           <!-- <div class="owl-carousel owl-theme team-carousel">
             <div class="item"> -->
-              <div class="col-md-4">
-                <div class="card ">
-                  <img class="card-img-top" src="./assets/img/news/erbilOpen.jpeg" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Erbil Branch Openning</h4>
-                    <p class="card-text">With God’s welling, Alrimal-Aldhahabiya Company, Erbil branch, was opened last month on 06/12/2021. We were honored by the presence of a government delegation and many important figures</p>
-                    <a href="./en/news/erbil-branch.html" class="btn-read animate__animated animate__fadeInUp scrollto">Read More</a>
-                  </div>
-                </div>
-              </div>
+              
             <!-- </div>
           </div> -->
         </div>
@@ -600,6 +573,9 @@ where we have a full team of consultants in all engineering specializations, and
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -617,8 +593,11 @@ where we have a full team of consultants in all engineering specializations, and
   emailjs.init("user_5X6CajhDjKCwrtOu5WaYy");
 </script>
   <!-- Template Main JS File -->
+  <script src="../assets/js/firebase.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/enProjects.js"></script>
+  <script src="assets/js/enTeam.js"></script>
+  <script src="assets/js/enNews.js"></script>
   <script src="assets/js/contact.js"></script>
 
 </body>

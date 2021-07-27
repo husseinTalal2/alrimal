@@ -41,22 +41,48 @@ const projects = [
     },
   ]
   
+const getProjects = async () => {
+    let projects;
+    await db
+        .collection("projects")
+        .get()
+        .then((querySnapshot) => {
+            projects = querySnapshot.docs.map((doc) => doc);
+        });
 
-projects.forEach(project => {
+    return projects;
+};
+
+const fetchImages = async (section, id) => {
+  let result = await storage.ref(section + "/" + id).listAll();
+  
+  let urlPromises = result.items.map((imageRef) =>
+      imageRef.getDownloadURL()
+  );
+  
+  return Promise.all(urlPromises);
+};
+(async function(){
+  const projects = await getProjects()
+  projects.forEach(async (doc) => {
+
+    const imgs = await fetchImages("projects", doc.id)
+    const project = doc.data().en
     const container = $(".portfolio-container")[0];
     container.insertAdjacentHTML('afterbegin',`
     
       <div class="col-md-4 portfolio-item filter-${project.category}">
         <div class="property-card">
-          <a href="${project.href}">
-            <div class="property-image" style="background-image:url(${project.img});">
+          <a href="/en/projects/?q=${doc.id}">
+            <div class="property-image" style="background-image:url(${imgs[0]});">
             </div>
           </a>
           <div class="property-description">
             <h5>${project.title}</h5>
-            <p>${project.info}</p>
+            <p>${project.subtitle}</p>
           </div>
         </div>
       </div>
     `)
   })
+})()
