@@ -86,5 +86,6 @@ const fetchImages = async (section, id) => {
         </div>
       </div>
     `)
+    container.style.height = "auto"
   })
 })()
